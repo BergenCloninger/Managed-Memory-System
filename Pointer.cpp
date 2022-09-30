@@ -24,11 +24,3 @@ class Test {
 public:
 	int test;
 };
-
-void test() {
-	int x = 5;
-	Pointer<int> test = &x;
-	Test test3 = {5};
-	Pointer<Test> test2 = &test3;
-	test2 -> test = 10;
-}
