@@ -25,4 +25,6 @@ int lookForSpace(int size, int count){
 
 void* mallocbutswag(int sizeOfAllocation){
 	int placeInBuffer = lookForSpace(sizeOfAllocation, 0);
+	unsigned char* temp = &global::buffer[placeInBuffer];
+	return temp;
 }
