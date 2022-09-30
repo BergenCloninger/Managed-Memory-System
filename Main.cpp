@@ -1,9 +1,10 @@
-#include <Pointer.h>
-#include <Managment.h>
+#include "Pointer.h"
+#include "Managment.h"
+#include <iostream>
 
-unsigned char* buffer;
+int size;
 
 int main() {
-	buffer = new unsigned char[65536];
-
+	global::buffer = new unsigned char[65536];
+	mallocbutswag(size);
 }
