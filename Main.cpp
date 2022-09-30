@@ -6,5 +6,5 @@ int size;
 
 int main() {
 	global::buffer = new unsigned char[65536];
-	mallocbutswag(size);
+	
 }

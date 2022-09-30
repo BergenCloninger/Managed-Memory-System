@@ -24,5 +24,5 @@ int lookForSpace(int size, int count){
 }
 
 void* mallocbutswag(int sizeOfAllocation){
-	lookForSpace(sizeOfAllocation, 0);
+	int placeInBuffer = lookForSpace(sizeOfAllocation, 0);
 }
