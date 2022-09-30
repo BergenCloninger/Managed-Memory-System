@@ -1,5 +1,14 @@
-// 1: A custom pointer class – it needs to have the same usage syntax as a standard pointer. You should be able to use * and &.  
-// This requires a custom constructor that takes a custom pointer as a parameter (the compiler will call the constructor implicitly) 
+#include "Pointer.h"
+#include "Managment.h"
+#include "Global.h"
+#include <iostream>
+
+int size;
+
 int main() {
-    
+	global::buffer = new unsigned char[65536];
+	int* pointer = reinterpret_cast<int*>(mallocbutswag(4));
+	*pointer = 3;
+	std::cout << *pointer;
+	return 0;
 }
