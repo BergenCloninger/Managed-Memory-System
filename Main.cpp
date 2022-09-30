@@ -7,8 +7,8 @@ int size;
 
 int main() {
 	global::buffer = new unsigned char[65536];
-	int* pointer = reinterpret_cast<int*>(mallocbutswag(4));
-	*pointer = 3;
-	std::cout << *pointer;
+	Pointer<int> testPointer = reinterpret_cast<int*>(mallocbutswag(4));
+	*testPointer = 3;
+	std::cout << *testPointer;
 	return 0;
 }
