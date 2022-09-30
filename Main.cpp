@@ -3,8 +3,6 @@
 #include "Global.h"
 #include <iostream>
 
-int size;
-
 int main() {
 	global::buffer = new unsigned char[65536];
 	int* pointer = reinterpret_cast<int*>(mallocbutswag(4));
